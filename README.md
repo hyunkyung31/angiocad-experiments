@@ -26,9 +26,7 @@
 
 AngioCAD에서 사용한 임상정보는 별도의 [Clinical RF 프로젝트](https://github.com/hyunkyung31/clinical-cad-screening)에서 활용한 UCI 데이터셋과 다릅니다.
 
-이 저장소에는 실험 코드와 집계 결과를 정리했으며, 원본 의료영상, 정답 및 예측 마스크, 환자별 임상정보, 모델 가중치는 포함하지 않았습니다.
 
-또한 AngioCAD에서 사용한 임상정보는 별도의 [Clinical RF 프로젝트](https://github.com/hyunkyung31/clinical-cad-screening)에서 활용한 UCI 데이터셋과 다릅니다.
 
 ## 1. 프로젝트 배경
 
