@@ -1,0 +1,73 @@
+{
+  "generator": "scripts/plot_results.py",
+  "metrics_sha256": "1c99d7816485fdfc44a725f0a1617ee53edb8937439e50e7222988aed0ddd2b4",
+  "generator_sha256": "453dd58bfbc15705ec7e05e567a714b287401233e55ac621ecafd5146b5284c5",
+  "figures": [
+    {
+      "path": "figures/dca1_baselines.png",
+      "caption": "DCA1 134장, 공통128GT의 pooled Dice. 후처리는 동일OOF에서 선택.",
+      "inputs": [
+        "results/metrics.csv"
+      ],
+      "kind": "aggregate_chart",
+      "contains_patient_images": false,
+      "model_execution": false,
+      "sha256": "b10e704dbe3e56a3b0344a3c3623eb35a5705aa3102bca702198d09246eb5a10"
+    },
+    {
+      "path": "figures/unet_resolution.png",
+      "caption": "해상도별GT에서계산한Raw128/256 비교. 순수 해상도 인과효과 아님.",
+      "inputs": [
+        "results/metrics.csv"
+      ],
+      "kind": "aggregate_chart",
+      "contains_patient_images": false,
+      "model_execution": false,
+      "sha256": "77ad8452048a01e165c3363480d9f5c383bd02b3bd4eef81b6351bc3555312bb"
+    },
+    {
+      "path": "figures/sam3_prompt_diagnostics.png",
+      "caption": "native macro mean의 진단prompt 비교. GTbox는정답위치정보사용.",
+      "inputs": [
+        "results/metrics.csv"
+      ],
+      "kind": "aggregate_chart",
+      "contains_patient_images": false,
+      "model_execution": false,
+      "sha256": "72a128ec3817dad4a90a7396b102531bfce93a61535dcbe38ac5bcfc602ef523"
+    },
+    {
+      "path": "figures/fusion_tradeoff.png",
+      "caption": "AngioCAD Clinical/XCA/Fusion OOF. AUROC개선과민감도감소를함께표시.",
+      "inputs": [
+        "results/metrics.csv"
+      ],
+      "kind": "aggregate_chart",
+      "contains_patient_images": false,
+      "model_execution": false,
+      "sha256": "be02115df70c6d24f2eecbb6409f1f92f423257a846f8b4baa32b16ce3574337"
+    },
+    {
+      "path": "figures/portfolio_cover.png",
+      "caption": "대표후보: DCA1분할과AngioCAD환자분류를별도패널로구분.",
+      "inputs": [
+        "results/metrics.csv"
+      ],
+      "kind": "aggregate_chart",
+      "contains_patient_images": false,
+      "model_execution": false,
+      "sha256": "8a310338a727698655f179d421fbdd31cdf985bbab25f9393c791cca780a17ef"
+    },
+    {
+      "path": "figures/prox_classification.png",
+      "caption": "별도 Test의 frame/환자 AUROC 비교. 위치탐지성능 아님.",
+      "inputs": [
+        "results/metrics.csv"
+      ],
+      "kind": "aggregate_chart",
+      "contains_patient_images": false,
+      "model_execution": false,
+      "sha256": "2cffb0357a96fdb6f2e4b377d91cb277bfe48d3e9de3bd16f222b25a5cea5796"
+    }
+  ]
+}
